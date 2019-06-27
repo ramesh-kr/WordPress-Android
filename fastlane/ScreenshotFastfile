@@ -95,6 +95,7 @@ platform :android do
       reinstall_app: false,
       clear_previous_screenshots: should_clear_previous_screenshots,
       locales: locales,
+      test_instrumentation_runner: "org.wordpress.android.WordPressTestRunner",
     }
 
     take_android_emulator_screenshots(devices: screenshot_devices, screenshot_options: screenshot_options)
